@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ama — a small scroll poem</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- AOS PLUGIN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker" data-aos="fade-down" data-aos-duration="900">a scroll poem </p>
+      <h1 data-aos="fade-up" data-aos-duration="900">ama</h1>
+      <p class="sub" data-aos="fade-up" data-aos-delay="150" data-aos-duration="900">
+        a poem for my mother, inspired by when life gives you tangerines. written by iel.
+      </p>
+      <div class="music-player">
+        <button id="playBtn" aria-label="Play background music">
+          ▶︎ play
+        </button>
+
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.35" aria-label="Volume control" />
+
+        <audio id="bgMusic"
+          src="IU - Midnight Walk   When Life Gives you Tangerines OST Chapter 3 RomIEng Lyric.mp3"></audio>
+      </div>
+      <p class="hint" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+        listen while you scroll ↓
+      </p>
+    </div>
+  </header>
+
+  <main class="story">
+
+    <!-- Section 1 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <p class="line">ama,</p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="card" data-aos="fade-down-right" data-aos-duration="1000">
+
+        <p class="line">my mom once told me</p>
+        <p class="line soft" data-aos="fade-down-right" data-aos-delay="150">
+          she used to write poems in her college workbook,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-down-left" data-aos-duration="1000">
+        <p class="line">before their house burned down, twice.</p>
+        <p class="line soft" data-aos="fade-down-left" data-aos-delay="150" data-aos-duration="1000">
+          she cross-stitched a poem that spelled honey,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <p class="line">each letter framed in my grandparents’ home,</p>
+        <p class="line soft" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          a confession of love to my dad.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-down" data-aos-duration="1000">
+        <p class="line">she was editor-in-chief in elementary and high school,</p>
+        <p class="line soft" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          top of her class for poetry,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 6 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <p class="line">a literary girl all on her own.</p>
+        <p class="line soft" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          even when life grew precarious,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 7 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-down-left" data-aos-duration="1000">
+        <p class="line">she found something to love in every moment.</p>
+        <p class="line soft" data-aos="fade-down-left" data-aos-delay="150" data-aos-duration="1000">
+          may i live within my means,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 8 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <p class="line">and stay true to where i belong,</p>
+        <p class="line soft" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          for any place i do not call home,
+        </p>
+      </div>
+    </section>
+
+    <!-- Section 9 -->
+    <section class="panel">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <p class="line">is one without your cooking.</p>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="panel end" style="margin-bottom:15%;">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <div class="photo-frame">
+          <img src="IMG_3428.jpg" alt="My mother holding our dog." />
+        </div>
+        <p class="signature">— my ae-sun.</p>
+        <p class="tiny" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">
+          thank you for reading.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="panel rationale">
+      <div class="card" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="rationale-title">Design Rationale</h2>
+
+        <p class="rationale-text">
+          This project uses the AOS (Animate On Scroll) JavaScript library to transform my personal poem about my mother
+          into an interactive, scroll-based narrative. I chose AOS because it allowed me to stylize and pace the content
+          without adding unnecessary complexity. By experimenting with the timing of the fade animations, I was able to
+          mirror the feeling of an intimate conversation unfolding gradually, rather than presenting the poem all at
+          once.
+        </p>
+
+        <p class="rationale-text">
+          Through this proof-of-concept, I wanted to demonstrate how lightweight animation can give static text greater
+          emotional weight. The progressive reveal helps orchestrate the poem in a way that feels coherent and
+          intentional, encouraging the reader to slow down and move through it thoughtfully. Beyond this implementation,
+          the same approach could be expanded into larger multimedia experiences. My initial idea was to create a
+          children’s picture book with illustrations and text fading in as you scroll, but ultimately this personal poem
+          resonated with me more and felt like a more meaningful use of the plugin.
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>
+      Proof-of-concept using AOS (Animate On Scroll).
+      <a href="https://michalsnik.github.io/aos/" target="_blank" rel="noreferrer">Plugin reference</a>
+    </p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
